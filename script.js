@@ -42,3 +42,8 @@ modeToggle.addEventListener("click", () => {
   const isDark = document.body.classList.contains("dark");
   modeToggle.textContent = isDark ? "☀️" : "🌙";
 });
+const clearHistoryButton = document.getElementById("clearHistory");
+
+clearHistoryButton.addEventListener("click", () => {
+  historyList.innerHTML = ""; // Remove all list items
+});

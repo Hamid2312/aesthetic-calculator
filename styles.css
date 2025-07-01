@@ -214,3 +214,21 @@ body.dark .equals:hover {
 body.dark #modeToggle {
   color: #f1c40f;
 }
+#clearHistory {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#clearHistory:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* subtle hover for light mode */
+}
+
+body.dark #clearHistory:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* subtle hover for dark mode */
+}
